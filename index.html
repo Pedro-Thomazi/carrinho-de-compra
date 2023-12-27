@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootrstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+  <title>Carrinho de Compra</title>
+</head>
+
+<body>
+  <header id="header">
+    <h1>Meu Carrinho</h1>
+    <span>
+      <i class="bi bi-cart4"></i>
+      <p id="qtdProducts">0</p>
+    </span>
+  </header>
+
+  <section id="products">
+    <div class="containerProduct">
+      <div class="product prodDetails1">
+        <div class="headerProd">
+          <span>
+            <h3>Guitarra Gibson</h3>
+            <p>R$1.415,99</p>
+          </span>
+
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur dolor repellendus qui accusantium, tempore quae dolore perferendis autem voluptates laborum quod neque corrupti, provident, atque culpa omnis mollitia eaque.</p>
+          <button id="btnAdd1" class="btnAdd">Adicionar ao Carrinho</button>
+        </div>
+        <img src="./img/fotoGuitarra.png" alt="Foto Guitarra">
+      </div>
+
+      <div class="product prodDetails2">
+        <div class="headerProd">
+          <span>
+            <h3>Amplificador Marshall</h3>
+            <p>R$2.554,65</p>
+          </span>
+
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur dolor repellendus qui accusantium, tempore quae dolore perferendis autem voluptates laborum quod neque corrupti, provident, atque culpa omnis mollitia eaque.</p>
+          <button id="btnAdd2" class="btnAdd">Adicionar ao Carrinho</button>
+        </div>
+        <img src="./img/fotoAmplificador.png" alt="Foto Amplificador">
+      </div>
+
+      <div class="product prodDetails3">
+        <div class="headerProd">
+          <span>
+            <h3>Pedal Distortion Boss</h3>
+            <p>R$245,41</p>
+          </span>
+
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur dolor repellendus qui accusantium, tempore quae dolore perferendis autem voluptates laborum quod neque corrupti, provident, atque culpa omnis mollitia eaque.</p>
+          <button id="btnAdd3" class="btnAdd">Adicionar ao Carrinho</button>
+        </div>
+        <img src="./img/fotoPedal.png" alt="Foto Produto">
+      </div>
+    </div>
+
+    <div class="totalPrice">
+      <h2>Finalizar Compra</h2>
+      <div class="product prod1">
+        <div class="title">
+          <h4>Guitarra Gibson</h4>
+          <p class="price">R$<span id="price1">0</span></p>
+        </div>
+        <div class="addOrRemove">
+          <button class="remove1">-</button>
+          <span id="qtd1">0</span>
+          <button class="add1">+</button>
+        </div>
+      </div>
+
+      <div class="product prod2">
+        <div class="title">
+          <h4>Amplificador Marshall</h4>
+          <p class="price">R$<span id="price2">0</span></p>
+        </div>
+        <div class="addOrRemove">
+          <button class="remove2">-</button>
+          <span id="qtd2">0</span>
+          <button class="add2">+</button>
+        </div>
+      </div>
+
+      <div class="product prod3">
+        <div class="title">
+          <h4>Pedal Distortion Boss</h4>
+          <p class="price">R$<span id="price3">0</span></p>
+        </div>
+        <div class="addOrRemove">
+          <button class="remove3">-</button>
+          <span id="qtd3">0</span>
+          <button class="add3">+</button>
+        </div>
+      </div>
+
+      <div class="total">
+        <h3>Preço total: </h3>
+        <p class="priceTotal">R$XXX,XX</p>
+      </div>
+
+      <button class="btnBuy">Comprar</button>
+    </div>
+  </section>
+</body>
+
+</html>
