@@ -196,8 +196,14 @@ const alertPrice = document.querySelector("#alertPrice")
 
 
 btnBuy.addEventListener("click", () => {
-  alertPrice.innerHTML = totalPrice.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
-  alertDiv.classList.add('show')
+  if (totalPrice > 0) {
+    alertPrice.innerHTML = totalPrice.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+    alertDiv.classList.add('show')
+  }
+  else {
+    alert('Adicione algo ao carrinho para prosseguir a compra')
+  }
+
 })
 
 btn_close.addEventListener("click", () => {
