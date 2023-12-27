@@ -187,3 +187,19 @@ btnAdd3.addEventListener("click", () => {
 })
 
 // ------------------------------------------------------------------------------------------------
+
+// Alert
+const btnBuy = document.querySelector(".btnBuy")
+const btn_close = document.querySelector(".btn-close")
+const alertDiv = document.querySelector(".alert")
+const alertPrice = document.querySelector("#alertPrice")
+
+
+btnBuy.addEventListener("click", () => {
+  alertPrice.innerHTML = totalPrice.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+  alertDiv.classList.add('show')
+})
+
+btn_close.addEventListener("click", () => {
+  location.reload()
+})
